@@ -1,0 +1,40 @@
+div {
+    /*border: 1px solid black;*/
+    box-sizing: border-box;
+}
+
+.content-container {
+    margin: 15px auto;
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.content-container-block-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-container-block {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-block-button-wrapper {
+    margin-bottom: 3px;
+}
+
+.title-button {
+    width: 100%;
+    padding: 3px;
+
+    color: #000080;
+
+    cursor: default;
+}
+
+.title-button:hover {
+    text-decoration: underline;
+}
