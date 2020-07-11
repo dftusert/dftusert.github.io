@@ -4,37 +4,54 @@ div {
 }
 
 .content-container {
-    margin: 15px auto;
-    width: 40%;
-
     display: flex;
     flex-direction: column;
+    flex: 1;
+
+    margin: 0 30%;
 }
 
-.content-container-block-title {
+.content-block-title  {
+    min-height: 100px;
+    font-family: sans-serif, Verdana, Helvetica, Arial;  
+    padding: 20px 50px 0px 50px;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+    color: #000000;
+}
+
+.content-container-buttons-wrapper {
     display: flex;
     flex-direction: column;
+
+    flex: 1;
 }
 
-.content-container-block {
-    margin-top: 20px;
+.content-container-buttons-wrapper-button,
+.content-container-buttons-wrapper-button-last {
     display: flex;
-    flex-direction: column;
-}
-
-.container-block-button-wrapper {
-    margin-bottom: 3px;
-}
-
-.title-button {
-    width: 100%;
-    padding: 3px;
-
-    color: #000080;
+    align-items: center;
+    min-height: 100px;
+    background-color: aliceblue;
 
     cursor: default;
 }
 
-.title-button:hover {
-    text-decoration: underline;
+.content-container-buttons-wrapper-button {
+    margin-bottom: 15%;
+}
+
+.title-button-text {
+    margin: 0 10px;
+    font-family: sans-serif, Verdana, Helvetica, Arial;  
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+    color: #0000FF;
+}
+
+.content-container-buttons-wrapper-button:hover,
+.content-container-buttons-wrapper-button-last:hover {
+    border: 1px solid #FF0000;
 }

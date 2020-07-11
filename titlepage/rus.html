@@ -1,48 +1,58 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <title>титульная страница</title>
 
     <link rel="stylesheet" href="../css/base.css" />
     <link rel="stylesheet" href="../css/titlepage.css" />
 
-    <script type = "text/javascript" src = "../js/base.js"></script>
+    <script type="text/javascript" src="../js/base.js"></script>
 </head>
 
 <body>
-    <div class="page">
-        <div class="header">
-            <div class="header-title">Управление безопасностью экономических объектов</div>
-            <div class="header-language">
-                <div class="header-language-value" onclick="route('..', 'titlepage', 'rus')">RUS</div>
-                <div class="header-language-value" onclick="route('..', 'titlepage', 'gb')">GB</div>
-            </div>
-        </div>
-        <div class="content">
-            <div class="content-flex-filler">
-                <div class="content-container">
-                    <div class="content-container-block-title">
-                        <div class="container-block-title">
-                            Информационно-аналитическая методическая и правовая ? (иАМПП)</div>
-                    </div>
-                    <div class="content-container-block">
-                        <div class="container-block-button-wrapper">
-                            <div class="title-button" onclick = "alert('Объекты финансово-? системы')">
-                                Объекты финансово-? системы</div>
-                        </div>
-                        <div class="container-block-button-wrapper-last">
-                            <div class="title-button" onclick = "alert('Правоохранительный сегмент финансово-? системы')">
-                                Правоохранительный сегмент финансово-? системы</div>
-                        </div>
+    <div class="page-container">
+        <div class="page-empty"></div>
+        <div class="page">
+            <div class="header">
+                <div class="header-title">
+                    <div class="header-title-text">УПРАВЛЕНИЕ БЕЗОПАСНОСТЬЮ ЭКОНОМИЧЕСКИХ ОБЪЕКТОВ</div>
+                </div>
+                <div class="header-language">
+                    <div class="header-language-values">
+                        <div class="header-language-value" onclick="route('..', 'titlepage', 'rus')">RUS</div>
+                        <div class="header-language-value" onclick="route('..', 'titlepage', 'gb')">GB</div>
                     </div>
                 </div>
             </div>
+            <div class="content">
+                <div class="content-block-title">Информационно-аналитическая методическая и правовая ? (иАМПП)</div>
+
+                <!-------------  начало Контент пользователя ------------->
+                <div class="content-container">
+                    <div class="content-container-buttons-wrapper">
+                        <div class="content-container-buttons-wrapper-button"
+                            onclick="alert('Объекты финансово-экономической системы')">
+                            <div class="title-button-text">Объекты финансово-экономической системы</div>
+                        </div>
+
+                        <div class="content-container-buttons-wrapper-button-last"
+                            onclick="alert('Правоохранительный сегмент финансово-экономической системы')">
+                            <div class="title-button-text">Правоохранительный сегмент финансово-экономической системы</div>
+                        </div>
+                    </div>
+                </div>
+                <!------------- конец Контент пользователя ------------->
+                <div class="content-flex-filler">
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer-left">Сборка</div>
+                <div class="footer-about">Москва, 2009</div>
+            </div>
         </div>
-        <div class="footer">
-            <div class="footer-left">Сборка</div>
-            <div class="footer-about">Москва, 2009</div>
-        </div>
+        <div class="page-empty"></div>
     </div>
 </body>
 
